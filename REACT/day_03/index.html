@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <h1 id="m"></h1>
+    <h3 id="n"></h3>
+        <script>
+        alert("Welcome to the Birthday Month Guessing Game");
+        let set1 = confirm("Is your birthday in 1, 3, 5, 7, 9, 11?");
+        let set2 = confirm("Is your birthday in 2, 3, 6, 7, 10, 11?");
+        let set3 = confirm("Is your birthday in 4, 5, 6, 7, 12?");
+        let set4 = confirm("Is your birthday in 8, 9, 10, 11, 12?");
+
+        let month = 0;
+        if (set1 === true){
+            month = month + 1;
+        }
+        if (set2 === true){
+            month = month + 2;
+        }
+        if (set3 === true){
+            month = month + 4;
+        }
+        if (set4 === true){
+            month = month + 8;
+        }
+        if (month > 12){
+            console.log("Your Given input is invaild");
+        }
+        else{
+            alert(`Your Birthday Month is ${month}`)
+             document.getElementById("m").innerHTML = `Your Birthday Month is ${month}`;
+             document.getElementById("n").innerHTML = `Thank you for playing the Birthday Month Guessing Game!`;
+        }
+       
+    </script>
+</body>
+</html>
