@@ -6,9 +6,9 @@
     <title>Document</title>
 
 </head>
-<body style="background-color: lemonchiffon;">
-    <h1 id="m"></h1>
-    <h3 id="n"></h3>
+<body style="background-color: rgb(46, 194, 184);">
+    <h1 id="j"></h1>
+    <h2 id="n"></h2>
         <script>
         alert("Welcome to the Birthday Month Guessing Game");
         let set1 = confirm("Is your birthday in 1, 3, 5, 7, 9, 11?");
@@ -34,9 +34,85 @@
         }
         else{
             alert(`Your Birthday Month is ${month}`)
-             document.getElementById("m").innerHTML = `Your Birthday Month is ${month}`;
-             document.getElementById("n").innerHTML = `Thank you for playing the Birthday Month Guessing Game!`;
         }
+
+        console.log(month);
+
+        let monthName = month;
+        if(monthName = 1){
+            monthName = "January";
+        }
+        if(monthName = 2){
+            monthName = "Febuary";
+        }
+        if(monthName = 3){
+            monthName = "March";
+        }
+        if(month = 4){
+            monthName = "April";
+        }
+        if(monthName = 5){
+            monthName = "May";
+        }
+        if(monthName = 6){
+            monthName = "June";
+        }
+        if(monthName = 7){
+            monthName = "July";
+        }
+        if(monthName = 8){
+            monthName = "August";
+        }
+        if(monthName = 9){
+            monthName = "September";
+        }
+        if(monthName = 10){
+            monthName = "Octuber";
+        }
+        if(monthName = 11){
+            monthName = "November";
+        }
+        if(monthName = 12){
+            monthName = "December";
+        }
+        else{
+            alert("Your Given input is invaild");
+        }
+
+        console.log(monthName);
+
+
+        let set5 = confirm("Is your birthdate is in 1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31?")
+        let set6 = confirm("Is your birthdate is in 2, 3, 6, 7, 10, 11, 14, 15, 18, 19, 22, 23, 26, 27, 30, 31?")
+        let set7 = confirm("Is your birthdate is in 4, 5, 6, 7, 12, 13, 14, 15, 20, 21, 22, 23, 28, 29, 30, 31?")
+        let set8 = confirm("Is your birthdate is in 8, 9, 10, 11, 12, 13, 14, 15, 24, 25, 26, 27, 28, 29, 30, 31?")
+        let set9 = confirm("Is your birthdate is in 16, 17, 18, 19,20, 21, 22, 23, 24, 25 , 26, 27, 28, 29, 30, 31?")
+
+        let date = 0;
+        if (set5 === true){
+            date = date +1;
+        }
+        if (set6 === true){
+            date = date + 2;
+        }
+        if (set7 === true){
+            date = date + 4;
+        }
+        if (set8 === true){
+            date = date + 8;
+        }
+        if (set9 === true){
+            date = date + 16;
+        }
+        if (date > 31){
+            alert("Your Given INPUT is invaild");
+        }
+        else{
+            alert(`Your Birthdate is ${date}`);
+                document.getElementById("j").innerHTML = `Your Birthdate is ${date} and Your Birth Month is ${monthName}`;
+                document.getElementById("n").innerHTML = `Thank you for playing the Birthday Guessing Game!`;
+        }
+
        
     </script> 
 </body>
