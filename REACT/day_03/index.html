@@ -6,9 +6,12 @@
     <title>Document</title>
 
 </head>
-<body style="background-color: rgb(46, 194, 184);">
+<body style="background-color: rgb(137, 194, 46);">
+    <center>
     <h1 id="j"></h1>
+    <hr>
     <h2 id="n"></h2>
+    </center>
         <script>
         alert("Welcome to the Birthday Month Guessing Game");
         let set1 = confirm("Is your birthday in 1, 3, 5, 7, 9, 11?");
@@ -39,40 +42,43 @@
         console.log(month);
 
         let monthName = month;
-        if(monthName = 1){
+        if (month === 0){
+            monthName = "Month is not found";
+        }
+        else if(month == 1){
             monthName = "January";
         }
-        if(monthName = 2){
-            monthName = "Febuary";
+        else if(month == 2){
+            monthName = "February";
         }
-        if(monthName = 3){
+        else if(month == 3){
             monthName = "March";
         }
-        if(month = 4){
+        else if(month == 4){
             monthName = "April";
         }
-        if(monthName = 5){
+        else if(month == 5){
             monthName = "May";
         }
-        if(monthName = 6){
+        else if(month == 6){
             monthName = "June";
         }
-        if(monthName = 7){
+        else if(month == 7){
             monthName = "July";
         }
-        if(monthName = 8){
+        else if(month == 8){
             monthName = "August";
         }
-        if(monthName = 9){
+        else if(month == 9){
             monthName = "September";
         }
-        if(monthName = 10){
-            monthName = "Octuber";
+        else if(month == 10){
+            monthName = "October";
         }
-        if(monthName = 11){
+        else if(month == 11){
             monthName = "November";
         }
-        if(monthName = 12){
+        else if(month == 12){
             monthName = "December";
         }
         else{
