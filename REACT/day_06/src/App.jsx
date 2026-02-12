@@ -1,33 +1,18 @@
-import { useState } from 'react'
-import './App.css'
+import { useState } from 'react';
+import Quiz from './Quiz';
+import './App.css';
 
 function App(){
-  let randomNum1 = Math.floor(Math.random() * 10);
-  let randomNum2 = Math.floor(Math.random() * 10);
-  const operator= ['+','-','*','/'];
-  let randomOp= operator[Math.floor(Math.random() * operator.length)];
-
-
+  const [StartQuiz, setStartQuiz] = useState(true);
   return(
     <>
-    <h1>Random Math Quiz Generater !!!!!!!!</h1>
+    {StartQuiz?<><h1>Welcome to the Math Quiz</h1>
     <hr />
-    <h2>{randomNum1}     {randomOp}     {randomNum2}    =   ???????</h2>
+    <h3>Click the button below to start</h3>
     <button onClick={()=>{
-     let result = eval(`${randomNum1} ${randomOp} ${randomNum2}`);
-     console.log(result);
-      alert(`The answer is ${result}`);
-    }}>Answer</button>
-
-
-    <br />
-    <br />
-    <button onClick={()=>{
-      window.location.reload();
-      <h2>Your Answer is {result}</h2>
-    }}>Reload</button>
+      setStartQuiz(false);
+    }}>Start Quiz</button></>: <Quiz/>}
     </>
   )
 }
-
 export default App
