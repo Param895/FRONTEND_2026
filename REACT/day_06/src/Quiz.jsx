@@ -13,18 +13,27 @@ function Quiz(){
     <>
     <h1>Random Math Quiz Generater !!!!!!!!</h1>
     <hr />
-    <h2>{randomNum1}     {randomOp}     {randomNum2}    =   ???????</h2>
+    <h2>{randomNum1}     {randomOp}     {randomNum2}    =   ????</h2>
+    <br />
+    <button onClick={()=>{
+     window.location.reload(Quiz());
+    }}>{result}</button>
+    <br />
+    <br />
+    <button onClick={()=>{
+     window.location.reload(Quiz());
+    }}>{result}</button>
+    <br />
+    <br />
+    <button onClick={()=>{
+     window.location.reload(Quiz());
+    }}>{result}</button>
+    <br />
+    <br />
     <button onClick={()=>{
      window.location.reload(Quiz());
     }}>{result}</button>
 
-
-    <br />
-    <br />
-    <button onClick={()=>{
-      window.location.reload();
-      <h2>Your Answer is {result}</h2>
-    }}>Reload</button>
     </>
   )
 }
